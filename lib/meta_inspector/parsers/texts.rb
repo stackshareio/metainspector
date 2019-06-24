@@ -9,6 +9,10 @@ module MetaInspector
         @title ||= parsed.css('head title').inner_text rescue nil
       end
 
+      def lang
+        @lang ||= parsed.css('html').attr('lang').value rescue nil
+      end
+
       def best_title
         @best_title ||= find_best_title
       end
