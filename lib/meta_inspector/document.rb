@@ -47,7 +47,7 @@ module MetaInspector
 
     delegate [:content_type, :response]               => :@request
 
-    delegate [:parsed, :title, :best_title, :author, :best_author,
+    delegate [:parsed, :lang, :title, :best_title, :author, :best_author,
               :description, :best_description, :links,
               :images, :feed, :charset, :meta_tags,
               :meta_tag, :meta, :favicon,
